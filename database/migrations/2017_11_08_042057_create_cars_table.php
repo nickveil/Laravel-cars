@@ -18,7 +18,7 @@ class CreateCarsTable extends Migration
         Schema::create('cars', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('make_id')->unsigned();
-            $table->foreign('make_id')->references('id')->on('makes'); //This line 
+            //$table->foreign('make_id')->references('id')->on('makes')->onDelete('cascade'); //This line 
             $table->string('model');
             $table->date('produced_on');
             $table->timestamps();

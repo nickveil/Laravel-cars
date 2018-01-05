@@ -10,7 +10,7 @@
                 <div class="panel-body">
                     <a href='test'>Index Test button</a>
                     <a href='test/create'>Create Test button</a>
-                    <a href='test/store'>Store Test button</a>
+                    <a href='test/store.1'>Store Test button</a>
                     <a href='test/show'>Show Test button</a>
                 </div>
             </div>

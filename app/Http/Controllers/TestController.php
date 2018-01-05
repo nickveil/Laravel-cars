@@ -14,8 +14,11 @@ class TestController extends Controller
     public function index()
     {
         $cars = \App\Cars::all();
+        //return "This is my index test line... Found you. #id:";
+        //$model = $cars->id;
         return $cars;
-        return "This is my index test line... Found you. #id:";
+        
+        
     }
 
     /**
@@ -47,6 +50,14 @@ class TestController extends Controller
      */
     public function show($id)
     {
+
+        $cars = \App\Cars::where([
+
+            ['id', '=', $id]
+
+        //$model = $cars->id;
+        ]);
+        return $cars;
         return "This is my show test line... Found you. #id:". $id;
     }
 
